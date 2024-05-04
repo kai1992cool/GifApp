@@ -4,10 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-gif',
-  template: `
-    <h1>{{ title }}</h1>
-    <img [src]="src" alt="Gif">
-  `,
+  templateUrl: './gif.component.html', // Use templateUrl instead of template
 })
 export class GifComponent implements OnInit {
   title: string = '';

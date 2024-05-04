@@ -1,26 +1,22 @@
+// app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router'; // Import RouterModule
-import { GifComponent } from '../gif/gif.component';
-import { GifDetailComponent } from '../gif/gif-detail.component';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-
-
+import { RootComponent } from './root.component'; // Import RootComponent
 
 @NgModule({
   declarations: [
-    GifComponent,
-    GifDetailComponent,
-    
+    RootComponent, // Declare RootComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    RouterModule, // Add RouterModule to imports array
+    RouterModule,
   ],
   providers: [],
-  bootstrap: [GifComponent, GifDetailComponent]
+  bootstrap: [RootComponent] // Bootstrap RootComponent
 })
 export class AppModule { }
