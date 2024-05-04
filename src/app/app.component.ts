@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  
+  standalone: true,
+  imports: [RouterLink, RouterOutlet, NgFor]
 })
 export class AppComponent {
   title = 'compiled';
   gifs = [
-    { title: 'GIF1', src: 'assets/gif1.gif' },
+    { title: 'gif1', src: 'assets/gif1.gif' },
     { title: 'GIF2', src: 'assets/gif2.gif' },
     // Gifs
   ];

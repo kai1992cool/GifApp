@@ -5,13 +5,14 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
 import { GifComponent } from '../gif/gif.component';
 import { GifDetailComponent } from '../gif/gif-detail.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent, // Declare AppComponent
     GifComponent,
     GifDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -20,6 +21,6 @@ import { AppComponent } from './app.component';
     RouterModule, // Add RouterModule to imports array
   ],
   providers: [],
-  bootstrap: [AppComponent] // Bootstrap AppComponent
+  bootstrap: [GifComponent, GifDetailComponent]
 })
 export class AppModule { }
