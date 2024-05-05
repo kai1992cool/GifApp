@@ -1,24 +1,35 @@
 /* app.component.css */
 .container {
     display: flex;
+    flex-direction: row; /* Change direction to row */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  .categories {
+    margin-right: 20px; /* Add space to the right of the categories */
+  }
+  
+  .gifs {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.gif {
+    flex-grow: 1; /* Allow the gifs container to take up remaining space */
+  }
+  
+  .gif {
     width: 200px; /* Adjust as needed */
     height: 200px; /* Adjust as needed */
     object-fit: cover;
     margin-bottom: 10px; /* Add space below the gif */
-}
-
-.title {
+  }
+  
+  .title {
     text-align: center;
-}
-
-a {
+  }
+  
+  a {
     display: block; /* Make the link a block element */
     text-align: center; /* Center the text */
     margin-top: 10px; /* Add space above the button */
-}
+  }
