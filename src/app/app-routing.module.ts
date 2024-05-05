@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GifDetailComponent } from '../gif/gif-detail.component';
+import { GifComponent } from '../gif/gif.component';
 
 const routes: Routes = [
-  { path: 'gifs/:title', component: GifDetailComponent },
+  { path: 'gifs/:title', component: GifComponent },
   // Add more routes here
 ];
 

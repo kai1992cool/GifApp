@@ -4,16 +4,15 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-gif',
-  templateUrl: './gif.component.html', // Use templateUrl instead of template
+  templateUrl: './gif.component.html',
 })
 export class GifComponent implements OnInit {
-  title: string = '';
-  src: string = '';
+  gif: { title: string, src: string } = { title: '', src: '' }; // Declare gif property
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.title = this.route.snapshot.paramMap.get('title') || '';
-    this.src = `assets/${this.title}.gif`;
+    this.gif.title = this.route.snapshot.paramMap.get('title') || '';
+    this.gif.src = `assets/${this.gif.title}.gif`;
   }
 }
