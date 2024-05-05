@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'compiled';
   gifs = [
     { title: 'gif1', src: 'assets/gif1.gif' },
-    { title: 'GIF2', src: 'assets/gif2.gif' },
+    { title: 'gif2', src: 'assets/gif2.gif' },
     // Gifs
   ];
 
