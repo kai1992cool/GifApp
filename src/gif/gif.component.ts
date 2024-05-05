@@ -7,12 +7,19 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './gif.component.html',
 })
 export class GifComponent implements OnInit {
-  gif: { title: string, src: string } = { title: '', src: '' }; // Declare gif property
+  category: string = ''; 
+  gifs: { title: string, src: string, category: string }[] = []; 
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.gif.title = this.route.snapshot.paramMap.get('title') || '';
-    this.gif.src = `assets/${this.gif.title}.gif`;
+    this.category = this.route.snapshot.paramMap.get('category') || '';
+    this.fetchGifs();
+    this.gifs = this.gifs.filter(gif => gif.category === this.category);
+  }
+
+  fetchGifs() {
+    // Fetch your gifs here...
+    // This is just a placeholder. Replace it with your actual logic to fetch gifs.
   }
 }

@@ -1,0 +1,4 @@
+<!-- upload.component.html -->
+<input type="text" [(ngModel)]="title" placeholder="Title">
+<input type="file" (change)="onFileChange($event)">
+<button (click)="onSubmit()">Submit</button>

@@ -1,3 +1,4 @@
 <!-- gif.component.html -->
-<h1>{{ gif.title }}</h1>
-<img [src]="gif.src" alt="{{ gif.title }}">
+<div *ngFor="let gif">
+    <img [src]="gif.src" alt="{{ gif.title }}">
+</div>

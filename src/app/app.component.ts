@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   
   gifs: { title: string, src: string }[] = []; // Declare gifs property
   categories: string[] = []; // Declare categories property
+  uploadedGifs: { title: string, file: File }[] = [];
 
   ngOnInit() {
     this.gifs = [
