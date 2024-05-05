@@ -8,7 +8,7 @@ import { RootComponent } from './root.component'; // Import RootComponent
 
 @NgModule({
   declarations: [
-    RootComponent, // Declare RootComponent
+     // Declare RootComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +17,6 @@ import { RootComponent } from './root.component'; // Import RootComponent
     RouterModule,
   ],
   providers: [],
-  bootstrap: [RootComponent] // Bootstrap RootComponent
+  bootstrap: [] // Bootstrap RootComponent
 })
 export class AppModule { }
