@@ -1,0 +1,24 @@
+/* app.component.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    margin-bottom: 10px; /* Add space below the gif */
+}
+
+.title {
+    text-align: center;
+}
+
+a {
+    display: block; /* Make the link a block element */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add space above the button */
+}

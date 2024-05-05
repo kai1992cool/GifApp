@@ -5,10 +5,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './root.component'; // Import RootComponent
+import { GifDetailComponent } from '../gif/gif-detail.component'; // Import GifDetailComponent
 
 @NgModule({
   declarations: [
-    RootComponent,
+    RootComponent, // Declare RootComponent
+    GifDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { RootComponent } from './root.component'; // Import RootComponent
     RouterModule,
   ],
   providers: [],
-  bootstrap: [RootComponent] // Bootstrap RootComponent
+  bootstrap: [ RootComponent ] // Bootstrap RootComponent
 })
 export class AppModule { }

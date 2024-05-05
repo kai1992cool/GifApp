@@ -1,7 +1,16 @@
-<div *ngFor="let gif of gifs">
-  <h2 (click)="redirectToGif(gif)">{{ gif.title }}</h2>
-  <img [src]="gif.src" alt="{{ gif.title }}">
-  <a [routerLink]="['/gifs', gif.title]">View Gifs</a>
-
+<!-- app.component.html -->
+<div class="container">
+  <h1 class="title">Best gifs of all time</h1>
+  <h2>Categories</h2>
+  <ul>
+    <li *ngFor="let category of categories">{{ category }}</li>
+  </ul>
+  <div *ngFor="let gif of gifs">
+    <h2 class="title">
+      <a [routerLink]="['/gifs', gif.title]" (click)="redirectToGif(gif)">{{ gif.title }}</a>
+    </h2>
+    <img class="gif" [src]="gif.src" alt="{{ gif.title }}" (click)="redirectToGif(gif)">
+    <a [routerLink]="['/gifs', gif.title]">View Gif</a>
+  </div>
 </div>
 <router-outlet></router-outlet>
