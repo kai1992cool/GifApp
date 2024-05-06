@@ -15,6 +15,6 @@ import { NgModule } from "@angular/core";
       FormsModule,
       HttpClientModule,
     ],
-    providers: [provideHttpClient()],
+    providers: [],
   })
   export class SharedModule { }
