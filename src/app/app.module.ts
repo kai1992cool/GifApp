@@ -16,8 +16,8 @@ import { UploadModule } from '../Upload/upload.module';
   imports: [
     RouterModule,
     BrowserModule,
-    UploadModule,
     SharedModule,
+    UploadModule,
     AppRoutingModule,
   ],
   providers: [],

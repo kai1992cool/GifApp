@@ -1,7 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
-import { UploadModule } from "../Upload/upload.module";
-import { HttpClientModule, provideHttpClient } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 
 @NgModule({
