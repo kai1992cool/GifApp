@@ -1,31 +1,24 @@
 // app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { RootComponent } from './root.component'; // Import RootComponent
 import { GifDetailComponent } from '../gif/gif-detail.component'; // Import GifDetailComponent
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { UploadComponent } from '../Upload/upload.component'; // Import UploadComponent
-import { UploadModule } from '../Upload/upload.module'; // Import UploadModule
+import { SharedModule } from './shared.module';
+import { RouterModule } from '@angular/router';
+import { UploadModule } from '../Upload/upload.module';
 
 @NgModule({
   declarations: [
     RootComponent, // Declare RootComponent
     GifDetailComponent,
-    
-    
   ],
   imports: [
-    BrowserModule,
-    CommonModule,
-    AppRoutingModule,
     RouterModule,
-    FormsModule,
-    HttpClientModule,
+    BrowserModule,
     UploadModule,
+    SharedModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [ RootComponent ] // Bootstrap RootComponent
